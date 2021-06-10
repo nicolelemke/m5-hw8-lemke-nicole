@@ -37,13 +37,13 @@ function boxclickhandler(event) {
     if (boxindex === winningbox) {
         displayedmessage.textContent = "Winner, Winner, Winner!"
         wincount += 1
-        displayedwincount.textContent = wincount
+        displayedwincount.textContent = "Wins:" + wincount
     }
  // if the numbers don't match, change the div#message element's text to a random losing message from the array above
 // if the numbers don't match, increment losses and display the loss count in div#losses
     else {
         displayedmessage.textContent = losingmessage[Math.floor((Math.random() * 3))];
         losecount += 1
-        displayedlosecount.textContent = losecount
+        displayedlosecount.textContent = "Losses:" + losecount
     }
 }
